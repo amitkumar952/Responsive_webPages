@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.navbar {
+  background-color: #ff6f6f;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.nav-links {
+  display: flex;
+  font-weight: bold;
+  gap: 90px;
+  margin: 0 auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600px;
+  letter-spacing: 3px;
+  color: #000;
+  line-height: 1;
+}
+
+
+.menu-icon {
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar {
+  background-color: #ff6f6f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 40px;
+}
+
+
+
+.Left-section {
+  display: flex;
+  height: calc(100vh - 70px);
+}
+
+
+.Left {
+  width: 50%;
+  padding: 90px 70px;
+  background: linear-gradient(to right, #fff2b2, #ffd6d6);
+}
+
+.Left h1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+.Left p {
+  padding-top: 45px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.Left button {
+  background-color: #ff6f6f;
+  color: white;
+  border: none;
+  margin-top: 45px;
+  padding: 12px 75px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.Right-image {
+  width: 50%;
+}
+
+.Right-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-section {
+  margin-top: 25px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px;
+  background: linear-gradient(to right, #fff2b2, #ffccff);
+}
+
+.images {
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left img {
+  width: 250px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.right img {
+  width: 300px;
+  height: 460px;
+  object-fit: cover;
+}
+
+
+.content-box {
+  background-color: #ff6f6f;
+  padding: 20px 60px;
+  max-width: 480px;
+}
+
+.small-title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.content-box h1 {
+  font-size: 46px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+
+.arrow-img {
+  height: 16px;
+  width: auto;
+  margin-top: 2px;
+}
+
+
+
+.click-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .content-box {
+    max-width: 100%;
+    padding: 30px 40px;
+  }
+
+  .content-box h1 {
+    font-size: 38px;
+    letter-spacing: 4px;
+  }
+
+  .small-title {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .navbar {
+    padding: 16px 24px;
+  }
+
+  .nav-links {
+    gap: 30px;
+  }
+
+  .Left-section {
+    width: 100%;
+  }
+
+  .Left,
+  .Right-image {
+    width: 50%;
+  }
+
+  .Left {
+    padding: 50px 30px;
+  }
+
+  .Left h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+
+  .Left p {
+    font-size: 16px;
+  }
+
+  .Right-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery-section {
+    gap: 40px;
+    padding: 40px 30px;
+    margin-top: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+
+  .nav-links {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+
+  .Left-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Left,
+  .Right-image {
+    width: 100%;
+  }
+
+  .Right-image img {
+    height: 300px;
+  }
+
+  .gallery-section {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right img {
+    height: 420px;
+  }
+
+  .content-box {
+    max-width: 100%;
+    padding: 30px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    padding: 10px 12px;
+    height: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 6px;
+    margin: 0;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    max-width: calc(100% - 30px);
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+
+  .menu-icon {
+    height: 16px;
+    padding: 4px;
+    border-radius: 3px;
+  }
+
+  .Left h1 {
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+
+  .Left p {
+    font-size: 15px;
+  }
+
+  .Left button {
+    padding: 12px 40px;
+  }
+}
